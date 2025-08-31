@@ -103,12 +103,7 @@ export function LazyVideo({ src, title, isShowreel = false, className = '', aspe
       } ${className}`}
       onClick={handleVideoClick}
     >
-      {/* Placeholder while not in view */}
-      {!isInView && (
-        <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-          <Play className="w-8 h-8 text-white/30" />
-        </div>
-      )}
+    
 
       {/* Dark background when video is not playing */}
       {(!isPlaying || !videoLoaded) && isInView && (
