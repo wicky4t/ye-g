@@ -396,7 +396,7 @@ gsap.to(backgroundTextRef.current, {
           className="absolute inset-0 flex items-center justify-center z-40" 
           style={{ top: isMobile() ? '45%' : '60%', left: '-1%' }}
         >
-          <div className="text-center z-10 px-6">
+          <div className="text-center z-10 px-6" max-sm:left-[41%]>
             <div 
               className={`text-2xl md:text-4xl lg:text-5xl font-bosenAlt tracking-tight text-white/70 leading-tight ${isMobile() ? 'opacity-100' : 'opacity-0 animate-fade-in-delayed'}`}
               style={{ 
