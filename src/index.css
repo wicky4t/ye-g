@@ -277,7 +277,7 @@ video {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; 
+  pointer-events: none;
   z-index: 1000;
   background: 
     linear-gradient(to right, rgba(0,0,0,0.1) 0%, transparent 15%, transparent 85%, rgba(0,0,0,0.1) 100%),
@@ -291,7 +291,7 @@ video {
 
 .chromatic-aberration::before,
 .chromatic-aberration::after {
-  content: '';
+  content: ''; 
   position: absolute;
   top: 0;
   left: 0;
@@ -330,18 +330,18 @@ video {
 @keyframes chromatic-red {
   0%, 100% {
     transform: translateX(1px) translateY(0px);
-    opacity: 10.02;
+    opacity: 0.02;
   }
   50% {
     transform: translateX(2px) translateY(1px);
-    opacity: 10.05;
+    opacity: 0.05;
   }
 }
 
 @keyframes chromatic-blue {
   0%, 100% {
     transform: translateX(-1px) translateY(0px);
-    opacity: 10.02;
+    opacity: 0.02;
   }
   50% {
     transform: translateX(-2px) translateY(-1px);
