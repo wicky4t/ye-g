@@ -143,7 +143,7 @@ function App() {
     heroElements.forEach(element => {
       if (element) {
         heroTl.to(element, { 
-          y: 10,
+          y: 100,
           ease: "power2.out"
         }, 0);
       }
