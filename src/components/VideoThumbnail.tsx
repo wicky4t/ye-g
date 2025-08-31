@@ -111,7 +111,7 @@ export function VideoThumbnail({
     >
       {/* Placeholder while not in view */}
       {!isInView && (
-        <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+        <div className="w-full h-full bg-gradient-to-br from-gray-800/0 to-gray-900/0 flex items-center justify-center">
           <Play className="w-8 h-8 text-white/0" />
         </div>
       )} 
