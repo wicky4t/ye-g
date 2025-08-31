@@ -246,6 +246,10 @@ gsap.to(backgroundTextRef.current, {
   return ( 
     <div className="relative">
      
+      {/* Cinematic Effects Overlay */}
+      <div className="vignette-effect" />
+      <div className="edge-blur" />
+      <div className="film-grain" />
        
       {/* Splash Screen */}
       {isLoading && <SplashScreen onLoadComplete={handleLoadComplete} />}
@@ -271,7 +275,7 @@ gsap.to(backgroundTextRef.current, {
       {/* Main Hero Section */} 
       <div 
         ref={heroRef}
-        className="relative min-h-screen w-full overflow-hidden bg-transparent"
+        className="relative min-h-screen w-full overflow-hidden bg-transparent chromatic-aberration"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
