@@ -33,7 +33,7 @@ export function MobileBadgeCarousel() {
       setTimeout(() => {
         setCurrentBadgeIndex((prev) => (prev + 1) % badges.length);
         setIsVisible(true);
-      }, 500); // 300ms fade out duration
+      }, 1000); // 300ms fade out duration
       
     }, 4000); // 3 seconds total cycle time
 
