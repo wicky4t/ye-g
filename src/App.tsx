@@ -326,8 +326,7 @@ gsap.to(backgroundTextRef.current, {
         <div className="relative">
           <div
             className="
-              w-[35rem] h-[35rem]
-              sm:w-[60px] sm:h-[600px]
+              w-[35rem] h-[5rem]
               lg:w-[62.5rem] lg:h-[62.5rem]
               overflow-hidden
             "
