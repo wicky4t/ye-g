@@ -315,10 +315,12 @@ gsap.to(backgroundTextRef.current, {
       {/* Portrait */}
       <div
         ref={portraitRef}
-        className={`fixed inset-0 flex items-center justify-center z-40 transition-opacity duration-100`}
-        style={{
-          top: "24%",
-          left: "1%",
+         className={`
+    fixed inset-0 flex items-center justify-center z-40 transition-opacity duration-100
+    md:top-[24%] md:left-[1%]    /* PC/Tablet ke liye */
+    top-[10%] left-[50%]         /* Mobile ke liye */
+    transform -translate-x-1/2   /* center me lane ke liye */
+  `}
           opacity: showportrait ? 1 : 0,
           pointerEvents: showportrait ? "auto" : "none",
         }}
