@@ -132,8 +132,9 @@ function App() {
         trigger: portfolioSectionRef.current,
         start: "top bottom",
         end: "top 70%",
-        scrub: 2,
+        scrub: 4,
         invalidateOnRefresh: false,
+        ease: "power2.out",
       }
     });
 
@@ -141,7 +142,10 @@ function App() {
     const heroElements = [portraitRef.current, baseRef.current, eyesRef.current];
     heroElements.forEach(element => {
       if (element) {
-        heroTl.to(element, { y: 50 }, 0);
+        heroTl.to(element, { 
+          y: 50,
+          ease: "power2.out"
+        }, 0);
       }
     }); 
 
