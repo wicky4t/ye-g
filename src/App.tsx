@@ -285,8 +285,8 @@ gsap.to(backgroundTextRef.current, {
         ref={baseRef}
         className={`
     fixed flex items-center justify-center z-40 transition-opacity duration-100
-    top-[20%] left-1/2 -translate-x-1/2   /* Mobile (default) */
-    md:top-[24%] md:left-[1%] md:translate-x-0 /* PC/Tablet */
+     md:top-[20%] left-1/2  md:translate-x-1/2   /* Mobile (default) */
+   top-[24%] md:left-[1%] translate-x-0 /* PC/Tablet */
   `}
   style={{
           opacity: showbase ? 1 : 0,
