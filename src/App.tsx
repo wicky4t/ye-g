@@ -132,7 +132,7 @@ function App() {
         trigger: portfolioSectionRef.current,
         start: "top bottom",
         end: "top 70%",
-        scrub: 1,
+        scrub: 2,
         invalidateOnRefresh: false,
       }
     });
