@@ -109,13 +109,7 @@ export function VideoThumbnail({
       } ${className}`}
       onClick={handleClick}
     >
-      {/* Placeholder while not in view */}
-      {!isInView && (
-        <div className="w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-          <Play className="w-8 h-8 text-white/30" />
-        </div>
-      )}  
-
+  
       {/* Video element */}
       {isInView && (
         <video
