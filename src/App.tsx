@@ -317,7 +317,7 @@ gsap.to(backgroundTextRef.current, {
         ref={portraitRef}
         className={`fixed inset-0 flex items-center justify-center z-40 transition-opacity duration-100`}
         style={{
-          top: "26%",
+          top: "30%",
           left: "1%",
           opacity: showportrait ? 1 : 0,
           pointerEvents: showportrait ? "auto" : "none",
