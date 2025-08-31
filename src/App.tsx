@@ -257,7 +257,7 @@ gsap.to(backgroundTextRef.current, {
   ref={fixedBackgroundRef}
   className="fixed inset-0 bg-center bg-no-repeat z-[-1] 
              bg-cover sm:bg-[length:100%_100%] 
-             max-sm:bg-[length:100%_100%]"
+             max-sm:bg-[length:200%_100%]"
   style={{
     backgroundImage: `url('/bg.png')`,
     backgroundAttachment: 'fixed'
