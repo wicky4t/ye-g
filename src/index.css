@@ -330,18 +330,18 @@ video {
 @keyframes chromatic-red {
   0%, 100% {
     transform: translateX(1px) translateY(0px);
-    opacity: 0.02;
+    opacity: 10.02;
   }
   50% {
     transform: translateX(2px) translateY(1px);
-    opacity: 0.05;
+    opacity: 10.05;
   }
 }
 
 @keyframes chromatic-blue {
   0%, 100% {
     transform: translateX(-1px) translateY(0px);
-    opacity: 0.02;
+    opacity: 10.02;
   }
   50% {
     transform: translateX(-2px) translateY(-1px);
