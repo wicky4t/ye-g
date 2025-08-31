@@ -105,11 +105,6 @@ export function LazyVideo({ src, title, isShowreel = false, className = '', aspe
     >
     
 
-      {/* Dark background when video is not playing */}
-      {(!isPlaying || !videoLoaded) && isInView && (
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
-      )}
-
       {/* Video element (only loads when clicked) */}
       {isInView && (
         <video
