@@ -372,7 +372,7 @@ gsap.to(backgroundTextRef.current, {
         {/* Background Text - Aamir Naqvi at Bottom */}
         <div 
           ref={backgroundTextRef}
-          className="absolute inset-0 flex items-center justify-center pointer-events-none z-10"
+          className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 hidden md:flex"
           style={{ 
             top: '65%',
             transition: isMobile() ? 'none' : 'transform 0.4s ease-out'
@@ -394,7 +394,7 @@ gsap.to(backgroundTextRef.current, {
         <div 
           ref={mainTextRef}
           className="absolute inset-0 flex items-center justify-center z-40"
-          style={{ top: '60%', left: '-1%' }}
+          style={{ top: isMobile() ? '45%' : '60%', left: '-1%' }}
         >
           <div className="text-center z-10 px-6">
             <div 
@@ -445,7 +445,7 @@ gsap.to(backgroundTextRef.current, {
         {/* Bottom Triangle Shape */}
         <div 
           ref={triangleRef}
-          className={`absolute bottom-4 
+          className={`absolute ${isMobile() ? 'bottom-16' : 'bottom-4'}
              left-[47.8%] max-sm:left-[41%]
              transform -translate-x-1/2 
              opacity-0 animate-fade-in-delayed 
