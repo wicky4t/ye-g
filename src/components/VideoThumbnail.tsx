@@ -139,10 +139,7 @@ export function VideoThumbnail({
         />
       )}
 
-      {/* Dark background when video is not playing */}
-      {(!isPlaying || !videoLoaded) && isInView && (
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-gray-900" />
-      )}
+    
 
       {/* Play button overlay */}
       {(!isPlaying || !videoLoaded) && (
