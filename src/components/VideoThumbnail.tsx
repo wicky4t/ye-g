@@ -5,6 +5,7 @@ import { Maximize2, X, Play } from "lucide-react";
 const isMobile = () => window.innerWidth < 768;
 
 interface VideoThumbnailProps {
+  src: string;
   title: string;
   aspectRatio?: "video" | "vertical";
   className?: string;
@@ -12,7 +13,7 @@ interface VideoThumbnailProps {
 }
 
 export function VideoThumbnail({
-  src,
+  src, 
   title,
   aspectRatio = "video",
   className = "",
