@@ -44,7 +44,7 @@ export function MobileBadgeCarousel() {
 
   return (
     <div className="fixed top-8 left-1/2 transform -translate-x-1/2 z-20 md:hidden">
-      <div className="relative w-20 h-20">
+      <div className="relative w-300 h-300">
         {/* Base Badge PNG */}
         <img
           src={currentBadge.image}
