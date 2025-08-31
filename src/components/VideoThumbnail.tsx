@@ -123,7 +123,7 @@ export function VideoThumbnail({
           className={`w-full h-full transition-opacity duration-300 ${
             isFullscreen ? 'object-contain' : 'object-cover'
           } ${videoLoaded && isPlaying ? 'opacity-100' : 'opacity-0'}`}
-          muted={!isShowreel}
+        
           loop={isShowreel}
           playsInline
           preload="none"
