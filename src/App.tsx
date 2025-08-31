@@ -283,12 +283,10 @@ gsap.to(backgroundTextRef.current, {
          {/* Base */}
       <div
         ref={baseRef}
-       className={`
-    fixed flex items-center justify-center z-40 transition-opacity duration-100
-    top-[20%] left-1/2 -translate-x-1/2   /* Mobile (default) */
-    md:top-[24%] md:left-[1%] md:translate-x-0 /* PC/Tablet */
-  `}
-  style={{
+        className={`fixed inset-0 flex items-center justify-center z-20 transition-opacity duration-100`}
+        style={{
+          top: "24%",
+          left: "1%",
           opacity: showbase ? 1 : 0,
           pointerEvents: showbase ? "auto" : "none",
         }}
@@ -296,7 +294,9 @@ gsap.to(backgroundTextRef.current, {
         <div className="relative">
           <div
             className="
-              w-[40rem] h-[40rem]
+              w-[35rem] h-[35rem]
+              sm:w-[600px] sm:h-[600px]
+              md:w-[50rem] md:h-[50rem]
               lg:w-[62.5rem] lg:h-[62.5rem]
               overflow-hidden
             "
@@ -347,12 +347,10 @@ gsap.to(backgroundTextRef.current, {
       {/* Eyes */}
       <div
         ref={eyesRef}
-       className={`
-    fixed flex items-center justify-center z-40 transition-opacity duration-100
-    top-[20%] left-1/2 -translate-x-1/2   /* Mobile (default) */
-    md:top-[24%] md:left-[1%] md:translate-x-0 /* PC/Tablet */
-  `}
-  style={{
+        className={`fixed inset-0 flex items-center justify-center z-30 transition-opacity duration-100`}
+        style={{
+          top: "24%", 
+          left: "1%",
           opacity: showeyes ? 1 : 0,
           pointerEvents: showeyes ? "auto" : "none",
           transform: isMobile() ? 'none' : `translate(${mousePosition.x * 8}px, ${mousePosition.y * 8}px)`,
