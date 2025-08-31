@@ -446,7 +446,7 @@ gsap.to(backgroundTextRef.current, {
         <div 
           ref={triangleRef}
           className={`absolute bottom-4 
-             left-[48%] max-sm:left-[41%] 
+             left-[47%] max-sm:left-[41%] 
              transform -translate-x-1/2 
              opacity-0 animate-fade-in-delayed 
              z-40 cursor-pointer`}
