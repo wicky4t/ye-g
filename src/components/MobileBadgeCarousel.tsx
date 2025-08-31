@@ -33,9 +33,9 @@ export function MobileBadgeCarousel() {
       setTimeout(() => {
         setCurrentBadgeIndex((prev) => (prev + 1) % badges.length);
         setIsVisible(true);
-      }, 1000); // 300ms fade out duration
+      }, 500); // 300ms fade out duration
       
-    }, 4000); // 3 seconds total cycle time
+    }, 4000); // 3 seconds total cycle time 
 
     return () => clearInterval(interval);
   }, []);
