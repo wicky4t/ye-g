@@ -43,14 +43,14 @@ export function MobileBadgeCarousel() {
   const currentBadge = badges[currentBadgeIndex];
 
   return (
-    <div className="fixed top-1 left-1/2 transform -translate-x-1/2 z-20 md:hidden">
-      <div className="relative w-300 h-300">
+    <div className="fixed top-8 left-1/2 transform -translate-x-1/2 z-20 md:hidden">
+      <div className="relative w-20 h-20">
         {/* Base Badge PNG */}
         <img
           src={currentBadge.image}
           alt="testimonial badge"
           className={`w-full h-auto block relative z-10 transition-opacity duration-300 ${
-            isVisible ? 'opacity-40' : 'opacity-0'
+            isVisible ? 'opacity-60' : 'opacity-0'
           }`}
         />
 
